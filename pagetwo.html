@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="page2.css" />
+    <title>ClarityWise</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo" id="oval">
+        <h4>
+          <img src="brain.png" alt="" height="70px"
+             style="padding-top: 2rem"/>
+          <a href="/index.html"> ClarityWise</a>
+        </h4>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="active" href="/pagetwo.html">Self-Diagnosis Quiz</a></li>
+          <li><a href="/page3.html">Resources</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="heading">Self-Assessment Quiz</div>
+    <div class="container">
+      <header>
+        <div class="step-row">
+          <div id="progress"></div>
+          <div class="step-col"><small>1</small></div>
+          <div class="step-col"><small>2</small></div>
+          <div class="step-col"><small>3</small></div>
+        </div>
+      </header>
+
+      <form id="form1">
+        <h1>ClarityWise</h1>
+        <label for="fullname">Full Name:</label>
+        <input type="text" class="form-control" id="name" /> <br />
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" />
+
+        <label for="phone">Telephone Number:</label>
+
+        <input type="tel" class="form-control" id="phone" />
+
+        <h2>About You</h2>
+
+        <label for="age" class="form-label">Age Range:</label>
+
+        <input
+          class="form-control"
+          list="datalistOptions"
+          id="age"
+          placeholder="Age Range...."
+        />
+        <datalist id="datalistOptions">
+          <option value="11-17"></option>
+          <option value="18-24"></option>
+          <option value="25-34"></option>
+          <option value="35-44"></option>
+          <option value="45-54"></option>
+          <option value="55-64"></option>
+          <option value="65+"></option>
+        </datalist>
+
+        <label for="pronouns">Pronouns:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="she/her/he/him/they/them/ze/zirs...."
+        />
+        <h2>About Your Mental Health</h2>
+        <label for="diagnosed"
+          >Have you ever been diagnosed with a mental health condition by a
+          professional (doctor, therapist, etc.)?</label
+        >
+        <input type="text" class="form-control" id="treatment" />
+        <label for="treatment"
+          >Have you ever received treatment/support for a mental health
+          problem?</label
+        >
+
+        <div class="btn-box">
+          <button type="button" id="next1">Next</button>
+        </div>
+      </form>
+      <form id="form2">
+        <h3>
+          Over the last month, how often have you been bothered by the following
+          problems?
+        </h3>
+        <label for="nervous">Feeling nervous, anxious, or on edge</label>
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="worry" class="form-label"
+          >Worrying too much about different things</label
+        >
+
+        <input
+          list="surveyselection"
+          id="worry"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="restless" class="form-label"
+          >Being so restless that it is hard to sit still</label
+        >
+
+        <input
+          class="form-control"
+          list="surveyselection"
+          id="restless"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous">Feeling nervous, anxious, or on edge</label>
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous"> Becoming easily annoyed or irritable</label>
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous"
+          >Do you tend to avoid or delay getting started on a new important
+          task?</label
+        >
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous"
+          >Do you regularly fail to remember important appointments or
+          obligations?</label
+        >
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous"
+          >Do you have difficulty unwinding or feel often on the go?</label
+        >
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+
+        <div class="btn-box">
+          <button type="button" id="next2">Next</button>
+        </div>
+      </form>
+
+      <form id="form3" >
+          
+        <label for="nervous"
+          >Do you have difficulty concentrating on people when they are speaking
+          to you?</label
+        >
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+
+        <label for="nervous"
+          >Do you frequently misplace things (or have difficulty finding
+          them)?</label
+        >
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous"
+          >Are you typically distracted (or find it hard to focus) when there is
+          activity or noise around you?</label
+        >
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous">Little interest or pleasure in doing things</label>
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous">Feeling down, depressed, or hopeless</label>
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous">Poor appetite or overeating</label>
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous"
+          >Feeling bad about yourself - or that you are a failure or have let
+          yourself or your family down</label
+        >
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+      <!--   <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist>
+        <label for="nervous"
+          >Trouble falling or staying asleep, or sleeping too much</label
+        >
+
+        <input
+          list="surveyselection"
+          id="nervous"
+          name="choices"
+          placeholder="Choose From Below"
+        />
+        <datalist id="surveyselection">
+          <option value="Not At All"></option>
+          <option value="Several Days"></option>
+          <option value="More Than Half The Days"></option>
+          <option value="Nearly Every Day"></option>
+        </datalist> -->
+
+        <label for="moreinfo">Anything you would like to add:</label>
+        <input type="text" class="form-control" id="name" />
+
+        <div class="btn-box">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+ <section id="toggle">
+      <form id="form4">
+<span id="displaymessage"></span>
+
+      </form>
+      
+    </div>
+   </section>
+     <script src="script.js"></script>
+  </body>
+</html>
